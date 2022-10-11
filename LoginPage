@@ -1,0 +1,13 @@
+from tkinter import *
+window=Tk()
+window.title('Login')
+window.geometry("300x250")
+Label(window, text="LOGIN").pack()
+Label(window, text="Username").pack()
+username_login_entry = Entry(window, textvariable="username")
+username_login_entry.pack()
+Label(window, text="Password").pack()
+password_login_entry = Entry(window, textvariable="password", show="*")
+password_login_entry.pack()
+btn=Button(window, text="Login", width=10, height=1).pack()
+window.mainloop()
